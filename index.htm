@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pajeone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        document.onkeydown = function(e) {
+                if (e.ctrlKey && 
+                    (e.keyCode === 67 || 
+                     e.keyCode === 86 || 
+                     e.keyCode === 85 || 
+                     e.keyCode === 117)) {
+                    return false;
+                } else {
+                    return true;
+                }
+        };
+        $(document).keypress("u",function(e) {
+          if(e.ctrlKey)
+          {
+        return false;
+        }
+        else
+        {
+        return true;
+        }
+        });
+        </script>
+    <script >
+        function stickyMenu(){
+            var sticky=document.getElementById('sticky');
+            if(window.pageYOffset> 220){
+                sticky.classList.add('sticky')
+            }else{
+                sticky.classList.remove('sticky')
+            }
+        }
+
+        window.onscroll=function(){
+            stickyMenu();
+        }
+    </script>
+</head>
+<body>
+    <div class="parallax">
+        <div class="page-title">paje one</div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu"><li>Home</li></a>
+            <a href="#deals" class="a-menu"><li>Deals</li></a>
+            <a href="#vegetable" class="a-menu"><li>Vegetable</li></a>
+            <a href="#fruit" class="a-menu"><li>Fruits</li></a>
+            <a href="#meat" class="a-menu"><li>Meats</li></a>
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="search ......" name="search" class="search-input"/>
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- Home begins -->
+    <div class="container">
+        <a href="#vegetable">
+            <div class="categories">
+                <img src="assets/mboga.jpg" alt="" class="item-image">
+                <div class="image-title">vegetables</div>
+            </div>
+        </a>
+        <a href="#fruit">
+            <div class="categories">
+                <img src="assets/papai.jpg" alt="" class="item-image">
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#meat">
+            <div class="categories">
+                <img src="assets/fish.jpg" alt="" class="item-image">
+                <div class="image-title">Meats&Fish</div>
+            </div>
+        </a>
+
+       
+    </div>
+    <!-- deals start -->
+    <div class="deals-container" id="deals">
+        <div class="parallax">
+            <div class="title">DEALS</div>
+        </div>
+        <div class="deal">
+            Save 20% on min-purchase of $149 on Vegetables
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+            Save 20% on min-purchase of $149 on Vegetables
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+        <div class="deal">
+            Save 20% on min-purchase of $149 on Vegetables
+            <button class="coupon-btn">Add Coupon</button>
+        </div>
+    </div>
+    <!-- delas end -->
+    <!--Vegetarias begins -->
+    <div class="deals-container" id="vegetable">
+        <div class="parallax">
+            <div class="title">VEGETABLES</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/mboga.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>mboga</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/green.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/boga.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Boga</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/onion.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>onion</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/carrot.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>carrots</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/cucumber.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/zukini.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>zukini</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/papirika.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/hoho.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Green peppers</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- vegetarial ends here -->
+    <!-- fruit start -->
+    <div class="deals-container" id="fruit">
+        <div class="parallax">
+            <div class="title">FRUIT</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/mango.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Mango</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/avocado.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Avocado</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/pineaple.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>pineaple</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/papai.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>papai</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/orange.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>orange</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/lemons.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>lemons</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/papaya-334461_1280.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/apple-2788662_1280.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/coconut-1771527_1280.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- fruit end here -->
+    <!-- meats and fish start -->
+    <div class="deals-container" id="meat">
+        <div class="parallax">
+            <div class="title">MEAT AND FISH</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>Tuna</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/pweza.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>pweza</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish1.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>fish</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish2.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>fish</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish3.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>fish</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish5.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish6.png" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish4.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="assets/fish.jpg" alt="" class="item-image-size">
+            </div>
+            <div class="description">
+                <b>organic Ocra</b>
+                <div class="item-select">
+                    price:$2.99/250grams
+                </div>
+                <label for="">Quantity</label>
+                <select name="" id="" class="item-select">
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+                    <option value="250 grams">250 grams</option>
+
+                </select><br>
+                <button class="buynow-btn">Buy Now</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- meat and fish end -->
+    <!-- Home ends -->
+    <!-- footer start -->
+    <div class="parallax1">
+        <div class="footer">
+            <div class="quick-links">
+                <div>LOCATION</div>
+                    <ul>
+                        <li><a href="" class="a-links">Paje</a></li>
+                        <li><a href="" class="a-links">Jambiani</a></li>
+                        <li><a href="" class="a-links">Bwejuu</a></li>
+
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <div>CAREER</div>
+                        <ul>
+                            <li><a href="" class="a-links">Parking</a></li>
+                            <li><a href="" class="a-links">Delivery</a></li>
+                            <li><a href="" class="a-links">Bwejuu</a></li>
+    
+                        </ul>
+                </div>
+                <div class="quick-links">
+                    <div>QUICK LINKS</div>
+                    <ul>
+                        <li><a href="" class="a-links">Contact Us</a></li>
+                        <li><a href="" class="a-links">FAQ</a></li>
+                        <li><a href="" class="a-links">hELP</a></li>
+
+                    </ul>
+            </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <i class="far fa-copyright fa-1x">Developed by ABE</i>
+        </div>
+    
+    </div>
+
+    <!-- footer ends here -->
+</body>
+</html>
